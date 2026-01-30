@@ -9,10 +9,10 @@ import Foundation
 
 protocol PatientRepositoryProtocol {
     
-    func getPatients( request: PatientRequest,
+    func getPatients(request: PatientRequest,
                      completionHandler: @escaping(PagedPatientsResponse?)-> Void)
     
-    func getPatientDetails( patientId: Int,
+    func getPatientDetails(patientId: Int,
                            completionHandler: @escaping(PatientDetail?)-> Void)
     
     func searchPatient(name: String, completionHandler: @escaping([PatientRecord]?)-> Void)
